@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  <category>
+    <pattern>*</pattern>
+    <template>
+        <message>Hi! My name is Bot, a computer science career advice chatbot.</message>
+        <message>I can help you find a computer science career that matches your interests and strengths.</message>
+        <message>Are you a computer science student?</message>
+        
+    <!--Is a CS student T/F buttons-->    
+        <button>
+          <text>Yes</text>
+          <postback>CS True</postback>
+        </button>
+        
+        <button>
+          <text>No</text>
+          <postback>CS False</postback>
+        </button>
+        <!--I have no answer for that.-->
+        </template>
+  </category>
+</aiml>
