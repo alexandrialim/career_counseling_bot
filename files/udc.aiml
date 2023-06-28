@@ -4,10 +4,10 @@
     <pattern>*</pattern>
     <template>
         <message>Hi! My name is Bot, a computer science career advice chatbot.</message>
-        <message>I can help you find a computer science career that matches your interests and strengths.</message>
-        <message>Are you a computer science student?</message>
+        <message>I can help you find a computer science related career that matches your interests and strengths.</message>
+        <message>Are you studying computer science?</message>
         
-    <!--Is a CS student T/F buttons-->    
+<!--Is a CS student T/F buttons-->    
         <button>
           <text>Yes</text>
           <postback>CS True</postback>
@@ -17,7 +17,141 @@
           <text>No</text>
           <postback>CS False</postback>
         </button>
-        <!--I have no answer for that.-->
         </template>
+  </category>
+  
+<!--Not a CS student-->
+  <category>
+      <pattern>No</pattern>
+      <template>This is a Computer Science student career bot. Please choose a different career bot.</template>
+  </category>
+<!--Is a CS student-->
+  <category>
+      <pattern>Yes</pattern>
+      <template>
+          <message>Great! Let's start our CS career questionnaire. If you want to leave this questionnaire, please type "quit"</message>
+          <message>Do you love writing code?</message>
+          <button>
+                <text>Yes!</text>
+                <postback>coding positive</postback>
+          </button>
+          <button>
+                <text>No, I do NOT enjoy writing code enough to want to do it for living.</text>
+                <postback>coding negative</postback>
+          </button>
+      </template>
+  </category>
+  
+<!--Wants to code for a living-->
+  <category>
+      
+      <pattern>coding positive</pattern>
+      <template>
+          <message>Do you prefer using creativity to build apps with code or use a systematic approach to build apps with code?</message>
+          
+          <button>
+              <text>I would love to be creative with my code.</text>
+              <postback>software developer</postback>
+          </button>
+          
+          <button>
+              <text>I like taking a systematic approach to building applications with my code.</text>
+              <postback>software engineer</postback>
+          </button>
+      </template>
+  </category>
+<!--Doesn't want to code for a living but likes math and stats-->
+  <category>
+      <pattern>coding negative</pattern>
+      <template>
+        <message>Do you enjoy doing math and statistics for a living?</message>
+        
+            <button>
+                <text>Yes, I would like to do a computer science career with a focus in math and statistics.</text>
+                <postback>math positive</postback>
+            </button>
+            
+            <button>
+                <text>No, I would NOT like to do a computer science career with a focus in math and statistics.</text>
+                <postback>math negative</postback>
+            </button>
+          
+      </template>
+  </category>
+
+<!--Wants to use math skills and likes money-->
+  <category>
+    <pattern>math positive</pattern>
+    <template>
+    <message>Do you think that you would enjoy doing a job that primarily focuses on managing user funds?</message>
+
+    <button>
+        <text>Yes, I would like to manage other peoples money.</text>
+        <postback>money positive</postback>
+    </button>
+    
+    <button>
+        <text>No, I do not want to manage anyones money.</text>
+        <postback>money negative</postback>
+    </button>
+    
+    </template>
+  </category>
+
+<!--Bot Result Responses-->
+  <category>
+        <pattern>software engineer</pattern>
+        <template>Since you like systematically building and designing software, You should become a software engineer.
+        <button>
+            <text>Software Engineer career info</text>
+            <url>https://www.computerscience.org/software-engineering/careers/software-engineer/how-to-become/</url>
+        </button>
+        </template>
+    </category>
+    
+    <category>
+      <pattern>software developer</pattern>
+      <template>Since you like to be creative when writing your code while designing an application, You should become a software developer.
+      <button>
+          <text>Software Developer career info</text>
+          <url>https://www.computerscience.org/careers/software-developer/</url>
+      </button>
+      </template>
+    </category>
+  
+    <category>
+        <pattern>math negative</pattern>
+        <template>Since you would prefer a career in computer science without a focus in programming and math, You should be an Project Manager.
+        <button>
+            <text>Project Management career info</text>
+            <url>https://hbr.org/2021/12/is-project-management-the-right-career-for-you</url>
+        </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>money positive</pattern>
+        <template>Since you would like to do a job that focuses on managing user funds, you should look into a job in the Financial Technology sector.
+        <button>
+            <text>Fintech career info</text>
+            <url>https://www.bankersbyday.com/a-career-in-fintech/</url>
+        </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>money negative</pattern>
+        <template>Since you would rather not do a job that incorperates user funds but you do like using math; you might want to look into Data related jobs. This can include data analytics, data science, Machine Learning engineer, etc.
+        <button>
+            <text>Data related career info</text>
+            <url>https://www.indeed.com/career-advice/finding-a-job/jobs-big-data</url>
+        </button>
+        </template>
+    </category>
+    
+<!--Quit Questionnaire-->
+  <category>
+      <pattern>quit</pattern>
+      <template>Bye Bye!</template>
   </category>
 </aiml>
