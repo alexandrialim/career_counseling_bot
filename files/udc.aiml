@@ -124,7 +124,7 @@
         <template>Since you would prefer a career in computer science without a focus in programming and math, You should be an Project Manager.
         <button>
             <text>Project Management career info</text>
-            <url>https://hbr.org/2021/12/is-project-management-the-right-career-for-you</url>
+            <url>https://www.coursera.org/articles/what-is-project-manager</url>
         </button>
         </template>
     </category>
@@ -134,7 +134,7 @@
         <template>Since you would like to do a job that focuses on managing user funds, you should look into a job in the Financial Technology sector.
         <button>
             <text>Fintech career info</text>
-            <url>https://www.bankersbyday.com/a-career-in-fintech/</url>
+            <url>https://www.makeuseof.com/best-careers-fintech/</url>
         </button>
         </template>
     </category>
@@ -144,7 +144,7 @@
         <template>Since you would rather not do a job that incorperates user funds but you do like using math; you might want to look into Data related jobs. This can include data analytics, data science, Machine Learning engineer, etc.
         <button>
             <text>Data related career info</text>
-            <url>https://www.indeed.com/career-advice/finding-a-job/jobs-big-data</url>
+            <url>https://careerkarma.com/blog/how-to-get-a-job-in-big-data/</url>
         </button>
         </template>
     </category>
