@@ -133,8 +133,8 @@
         <pattern>money positive</pattern>
         <template>Since you would like to do a job that focuses on managing user funds, you should look into a job in the Financial Technology sector.
         <button>
-            <text>Fintech career info</text>
-            <url>https://www.makeuseof.com/best-careers-fintech/</url>
+            <text>Financial Data Analyst career info</text>
+            <url>https://www.cfainstitute.org/en/programs/cfa/charterholder-careers/roles/financial-data-analyst</url>
         </button>
         </template>
     </category>
@@ -143,8 +143,8 @@
         <pattern>money negative</pattern>
         <template>Since you would rather not do a job that incorperates user funds but you do like using math; you might want to look into Data related jobs. This can include data analytics, data science, Machine Learning engineer, etc.
         <button>
-            <text>Data related career info</text>
-            <url>https://careerkarma.com/blog/how-to-get-a-job-in-big-data/</url>
+            <text>Data Scientist related career info</text>
+            <url>https://www.coursera.org/articles/data-science-career</url>
         </button>
         </template>
     </category>
