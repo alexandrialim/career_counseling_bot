@@ -22,12 +22,12 @@
   
 <!--Not a CS student-->
   <category>
-      <pattern>No</pattern>
+      <pattern>CS False</pattern>
       <template>This is a Computer Science student career bot. Please choose a different career bot.</template>
   </category>
 <!--Is a CS student-->
   <category>
-      <pattern>Yes</pattern>
+      <pattern>CS True</pattern>
       <template>
           <message>Great! Let's start our CS career questionnaire. If you want to leave this questionnaire, please type "quit"</message>
           <message>Do you love writing code?</message>
